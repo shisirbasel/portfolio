@@ -1,38 +1,58 @@
 import BannerImage from './../assets/images/banner.svg'
 import WavingGif from './../assets/images/waving.gif'
-import { Box, Heading, Text, Image } from "@chakra-ui/react"
-
+import { Flex, Box, Heading, Text, Image } from "@chakra-ui/react"
 
 const About = () => {
   return (
-    <>
-        <Box display='flex' px='10rem' py='20' my='10' w='100%' h='85vh' gap='20' alignItems='center'>
-            <Box w='6/12'>
-                <Box display='flex' gap='3' my='10' alignItems='center'>
-                    <Heading fontSize='5xl'>Hi, i am</Heading>
-                    <Heading fontSize='5xl' color='#8056F9'>Shisir Basel</Heading>
-                    <Image h='12'
-                        src={WavingGif}
-                    />
-                </Box>
-                <Box my='10'>
-                    <Text textStyle='2xl' lineHeight='2'>
-                        I am a Full Stack Developer skilled in Django, Django REST Framework and React.js, 
-                        with a strong foundation in software engineering. 
-                        I am passionate about AI, machine learning, and innovative web solutions.
-                    </Text>
-                </Box>
-            </Box>
-            <Box w='6/12'>
-                <Image 
-                src={BannerImage} 
-                className="floating-image" 
-                alt="Banner" 
-                />
-            </Box>
-        </Box>
-    </>
+    <Flex 
+      direction={{ base: "column", lg: "row" }}
+      justifyContent="center"
+      alignItems="center"
+      py={{ base: "10", md: "16", lg: "20" }}
+      my={{ base: "5", md: "10" }}
+      gap={{ base: "10", md: "16", lg: "20" }}
+      px={{ base: "6", md: "12" }}
+    >
+      <Box w={{ base: "full", md: "8/12", lg: "6/12" }} textAlign={{ base: "center", lg: "left" }} pl={{base:"10",md:"0",sm:'0'}}>
+        <Flex alignItems="center" gap="3" justifyContent={{ base: "center", lg: "flex-start" }}>
+            <Heading 
+                fontSize={
+                    { 
+                        base: "2xl", 
+                        md: "3xl", 
+                        lg: "4xl", 
+                        xl:'5xl',
+                    }
+                }
+            >
+                Hi, I am
+            </Heading>
+            <Heading 
+                fontSize={
+                    { 
+                        base: "2xl", 
+                        md: "3xl", 
+                        lg: "4xl", 
+                        xl:'5xl',
+                    }
+                } 
+                color="#8056F9"
+            >
+                Shisir Basel
+            </Heading>
+          <Image h={{ base: "8", md: "10", lg: "12" }} src={WavingGif} alt="Waving hand" />
+        </Flex>
+        <Text mt="6" fontSize={{ base: "md", md: "lg", lg: "xl" }} lineHeight={{ base: "1.6", md: "1.8" }}>
+          I am a Full Stack Developer skilled in Python and JavaScript, 
+          with a strong foundation in software engineering. I am passionate about AI, machine learning, and 
+          innovative web solutions.
+        </Text>
+      </Box >
+      <Box w={{ base: "80%", sm: "70%", md: "60%", lg: "500px", xl: "600px" }}>
+        <Image src={BannerImage} className="floating-image" alt="Banner" />
+      </Box>
+    </Flex>
   )
 }
 
-export default About
+export default About;
