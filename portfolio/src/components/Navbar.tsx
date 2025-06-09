@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <>
       {/* Navbar */}
-      <Box display="flex" px="4.5rem" py="5" w="100%" gap={{md:'5','lg':'10'}} alignItems="center">
+      <Box display="flex" px={{md:'4.5rem','lg':'4.5rem',base:'2.5rem'}} py="5" w="100%" gap={{md:'5','lg':'10'}} alignItems="center">
         <Box>
           <Heading fontSize="2xl" whiteSpace="nowrap">{"<> Shisir Basel </>"}</Heading>
         </Box>

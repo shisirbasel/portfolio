@@ -11,9 +11,9 @@ const About = () => {
       py={{ base: "10", md: "16", lg: "20" }}
       my={{ base: "5", md: "10" }}
       gap={{ base: "10", md: "16", lg: "20" }}
-      px={{ base: "6", md: "12" }}
+      px={{ base: "2.5rem", md: "4.5rem", lg: "4.5rem" }}
     >
-      <Box w={{ base: "full", md: "8/12", lg: "6/12" }} textAlign={{ base: "center", lg: "left" }} pl={{base:"10",md:"0",sm:'0'}}>
+      <Box w={{ base: "full", md: "8/12", lg: "6/12" }} textAlign={{ base: "center", lg: "left" }}>
         <Flex alignItems="center" gap="3" justifyContent={{ base: "center", lg: "flex-start" }}>
             <Heading 
                 fontSize={
