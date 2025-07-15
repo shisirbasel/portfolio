@@ -7,19 +7,19 @@ const Navbar = () => {
       {/* Navbar */}
       <Box display="flex" px={{md:'4.5rem','lg':'4.5rem',base:'2.5rem'}} py="5" w="100%" gap={{md:'5','lg':'10'}} alignItems="center">
         <Box>
-          <Heading fontSize="2xl" whiteSpace="nowrap">{"<> Shisir Basel </>"}</Heading>
+          <Heading fontSize="2xl" fontFamily="Dancing Script" whiteSpace="nowrap">{"<> Shisir Basel </>"}</Heading>
         </Box>
         <Box display={{ base: "none", md: "flex" }} ml="auto" gap={{md:'5','lg':'10'}} alignItems="center">
-          <a href="/#"><Text fontWeight="semibold" textStyle="lg" _hover={{ textDecoration: "underline" }}>About</Text></a>
+          {/* <a href="/#"><Text fontWeight="semibold" textStyle="lg" _hover={{ textDecoration: "underline" }}>About</Text></a>
           <a href="/#education"><Text fontWeight="semibold" textStyle="lg" _hover={{ textDecoration: "underline" }}>Education</Text></a>
           <a href="/#experience"><Text fontWeight="semibold" textStyle="lg" _hover={{ textDecoration: "underline" }}>Experience</Text></a>
-          <a href="/#projects"><Text fontWeight="semibold" textStyle="lg" _hover={{ textDecoration: "underline" }}>Projects</Text></a>
+          <a href="/#projects"><Text fontWeight="semibold" textStyle="lg" _hover={{ textDecoration: "underline" }}>Projects</Text></a> */}
           <ColorModeButton />
         </Box>
  
          <Box display={{ base: "flex", md: "none" }} ml="auto" alignItems="center" gap="4">
           <ColorModeButton />
-          <Drawer.Root size="sm">
+          {/* <Drawer.Root size="sm">
             <Drawer.Trigger asChild>
               <Button variant="outline" size="sm">
                 Menu
@@ -44,7 +44,7 @@ const Navbar = () => {
                 </Drawer.Content>
               </Drawer.Positioner>
             </Portal>
-          </Drawer.Root>
+          </Drawer.Root> */}
         </Box>
       </Box>
     </>
