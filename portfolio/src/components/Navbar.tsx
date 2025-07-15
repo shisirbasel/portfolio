@@ -1,4 +1,5 @@
-import { Box, Button, Heading, Text, Drawer, Portal, CloseButton } from "@chakra-ui/react";
+import { Box, Heading } from "@chakra-ui/react";
+// import { Button, Text, Drawer, Portal, CloseButton } from "@chakra-ui/react";
 import { ColorModeButton } from "@/components/ui/color-mode";
 
 const Navbar = () => {
